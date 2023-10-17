@@ -8,7 +8,10 @@
 ### 1.修改UI服务的端口地址 vim /webapp/application.yml  serverPort默认是8080,修改成你需要的
 
 ### 2.解压并执行bin 下的 startup.sh
-
+startup.sh(表示同时启动 oapService webappService 两个服务,这两个服务也可以单独启动)
+oapService: skywalking 服务端
+webappService: skywalking 服务端管理页面UI
+启动后可以查看logs目录下的日志
 ## Java Agent使用
 
 ### 启动命令配置
