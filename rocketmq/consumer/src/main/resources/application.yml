@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rocketmq-consumer-server
+
+--- # RocketMQ
+rocketmq:
+  # name-server
+  name-server: 127.0.0.1:9876
+  consumer:
+    # 默认消费者组 服务名|producer
+    group: ${spring.application.name}|consumer
+
+---
+

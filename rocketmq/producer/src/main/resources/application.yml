@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rocketmq-producer-server
+
+--- # RocketMQ
+rocketmq:
+  # name-server
+  name-server: my.rocketmq.com:9876
+  producer:
+    # 默认生产者组 服务名|producer
+    group: ${spring.application.name}|producer
+
+---
+
